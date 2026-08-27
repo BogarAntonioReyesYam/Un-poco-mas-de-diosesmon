@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { X, Coins, Package } from 'lucide-react'
+import { X, Coins } from 'lucide-react'
 import FadeIn, { SectionHead } from './FadeIn'
 import { KITS_EXCLUSIVOS } from '../data/kits'
 
@@ -22,7 +22,7 @@ function KitModal({ kit, onClose }) {
           onClick={onClose}
         >
           <motion.div
-            className="mx-auto max-w-2xl rounded-2xl border border-line bg-panel p-6 sm:p-8"
+            className="mx-auto max-w-3xl rounded-2xl border border-line bg-panel p-6 sm:p-8"
             initial={{ opacity: 0, y: 30, scale: 0.97 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, y: 30, scale: 0.97 }}
             onClick={(e) => e.stopPropagation()}
             role="dialog" aria-modal="true"
@@ -30,21 +30,27 @@ function KitModal({ kit, onClose }) {
             <div className="mb-6 flex items-start justify-between gap-4">
               <div>
                 <h3 className="font-display text-2xl font-bold">{kit.name}</h3>
-                <p className="font-mono text-xs uppercase tracking-wider text-mist">Kit exclusivo · {kit.price.toLocaleString()} DiosesCoins</p>
+                <p className="font-mono text-xs uppercase tracking-wider text-mist">{kit.price.toLocaleString()} DiosesCoins · Kit exclusivo</p>
               </div>
               <button onClick={onClose} aria-label="Cerrar" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-line text-mist hover:border-gold hover:text-gold"><X size={18} /></button>
             </div>
-            <p className="mb-3 font-mono text-xs uppercase tracking-wider text-mist">◈ Contenido del kit</p>
-            <div className="grid grid-cols-3 gap-3 sm:grid-cols-5">
-              {kit.items.map((it, i) => (
-                <div key={i} className="flex flex-col items-center gap-1.5 rounded-xl border border-line bg-night/50 p-3 text-center">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-lg text-lg" style={{ background: `${kit.color}22`, border: `1px solid ${kit.color}44` }}>
-                    <Package size={18} style={{ color: kit.color }} />
-                  </span>
-                  <span className="text-[0.68rem] leading-tight text-mist">{it}</span>
+
+            <div className="space-y-6">
+              {(kit.sections || [{ title: 'Contenido', items: kit.items?.map(i => typeof i === 'string' ? { name: i } : i) || [] }]).map((sec) => (
+                <div key={sec.title}>
+                  <h4 className="mb-2 font-mono text-xs font-bold uppercase tracking-wider text-gold">◈ {sec.title}</h4>
+                  <div className="space-y-1.5">
+                    {sec.items.map((it, i) => (
+                      <div key={i} className="flex flex-col rounded-lg border border-line bg-night/40 px-3 py-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
+                        <span className="text-sm font-medium text-ink">{it.name}</span>
+                        {it.ench && <span className="font-mono text-xs text-mist">{it.ench}</span>}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
+
             <div className="mt-6 flex items-center justify-between rounded-xl border border-gold/30 bg-gold/10 px-4 py-3">
               <span className="font-mono text-sm font-bold text-gold inline-flex items-center gap-2"><Coins size={16} />{kit.price.toLocaleString()} DiosesCoins</span>
               <span className="font-mono text-xs text-mist">En el juego: /kits</span>
