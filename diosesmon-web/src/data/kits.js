@@ -171,6 +171,89 @@ export const KITS_EXCLUSIVOS = [
     price: 11250,
     color: '#1a1a2e',
     accent: '#6a1a5a',
-    sections: [{ title: 'Contenido', items: [{ name: 'Próximamente — envía el detalle y lo agrego' }] }],
+    sections: [
+      {
+        title: 'Herramientas y Armas',
+        items: [
+          { name: 'Espada DARKRAI', ench: 'Filo V, Aspecto ígneo III, Botín IV, Irrompibilidad V, Reparación' },
+          { name: 'Pico I DARKRAI', ench: 'Fortuna V, Eficiencia VII, Irrompibilidad VI, Reparación' },
+          { name: 'Pico II DARKRAI', ench: 'Toque de seda, Eficiencia VII, Irrompibilidad VI, Reparación' },
+          { name: 'Pala DARKRAI', ench: 'Toque de seda, Eficiencia VII, Irrompibilidad VI, Reparación' },
+          { name: 'Hacha DARKRAI', ench: 'Eficiencia VII, Irrompibilidad VI, Reparación' },
+          { name: 'Azada DARKRAI', ench: 'Eficiencia V, Irrompibilidad V, Reparación' },
+        ],
+      },
+      {
+        title: 'Armadura',
+        items: [
+          { name: 'Casco DARKRAI', ench: 'Protección V, Respiración V, Irrompibilidad V, Reparación' },
+          { name: 'Pechera DARKRAI', ench: 'Protección V, Irrompibilidad V, Reparación' },
+          { name: 'Pantalones DARKRAI', ench: 'Protección V, Irrompibilidad V, Reparación' },
+          { name: 'Botas DARKRAI', ench: 'Protección V, Caída de pluma V, Irrompibilidad V, Reparación' },
+        ],
+      },
+      {
+        title: 'Objetos Cobblemon',
+        items: [
+          { name: 'Ultra Ball x16' }, { name: 'Master Ball x24' }, { name: 'Chaleco Asalto x1' },
+          { name: 'Casco Dentado x1' }, { name: 'Gafas Especiales x1' }, { name: 'Vidasfera x1' },
+          { name: 'Restos x1' }, { name: 'Pañuelo Elección x1' }, { name: 'Parche Habilidad x1' },
+          { name: 'DT en blanco x2' }, { name: 'Teralito Astral x50' }, { name: 'Baya Zidra x16' },
+          { name: 'Calcio x25' }, { name: 'Hierro x16' }, { name: 'Zinc x26' }, { name: 'Carburante x26' },
+          { name: 'Más PS x26' }, { name: 'Más PP x5' }, { name: 'PP Máximo x3' },
+        ],
+      },
+      {
+        title: 'Consumibles Survival',
+        items: [{ name: 'Zanahoria dorada x64' }, { name: 'Caramelo Raro x24' }],
+      },
+    ],
+  },
+  {
+    id: 'groudon',
+    name: 'Kit Groudon',
+    price: 11250,
+    color: '#8b3a1a',
+    accent: '#5a1e0a',
+    sections: [
+      {
+        title: 'Herramientas y Armas',
+        items: [
+          { name: 'Espada GROUDON', ench: 'Filo V, Aspecto ígneo III, Botín IV, Irrompibilidad V, Reparación' },
+          { name: 'Pico I GROUDON', ench: 'Fortuna V, Eficiencia VII, Irrompibilidad VI, Reparación' },
+          { name: 'Pico II GROUDON', ench: 'Toque de seda, Eficiencia VII, Irrompibilidad VI, Reparación' },
+          { name: 'Pala GROUDON', ench: 'Toque de seda, Eficiencia VII, Irrompibilidad VI, Reparación' },
+          { name: 'Hacha GROUDON', ench: 'Eficiencia VII, Irrompibilidad VI, Reparación' },
+          { name: 'Azada GROUDON', ench: 'Eficiencia V, Irrompibilidad V, Reparación' },
+          { name: 'Arco GROUDON', ench: 'Poder V, Irrompibilidad V' },
+        ],
+      },
+      {
+        title: 'Armadura',
+        items: [
+          { name: 'Casco GROUDON', ench: 'Protección V, Respiración V, Irrompibilidad V, Reparación' },
+          { name: 'Pechera GROUDON', ench: 'Protección V, Protección contra el fuego V, Irrompibilidad V, Reparación' },
+          { name: 'Pantalones GROUDON', ench: 'Protección V, Irrompibilidad V, Reparación' },
+          { name: 'Botas GROUDON', ench: 'Protección V, Caída de pluma V, Velocidad del alma III, Irrompibilidad V, Reparación' },
+        ],
+      },
+      {
+        title: 'Objetos Cobblemon',
+        items: [
+          { name: 'Ultra Ball x16' }, { name: 'Master Ball x24' }, { name: 'Chaleco Asalto x1' },
+          { name: 'Gafas Especiales x1' }, { name: 'Casco Dentado x1' }, { name: 'Vidasfera x1' },
+          { name: 'Restos x1' }, { name: 'Pañuelo Elección x1' }, { name: 'Cápsula Habilidad x1' },
+          { name: 'DT en blanco x2' }, { name: 'Teralito Astral x50' }, { name: 'Baya Zidra x16' },
+          { name: 'Zinc x26' }, { name: 'Calcio x15' }, { name: 'Hierro x50' }, { name: 'Proteína x16' },
+          { name: 'Carburante x26' }, { name: 'Más PS x26' }, { name: 'Más PP x5' }, { name: 'PP Máximo x3' },
+        ],
+      },
+      {
+        title: 'Consumibles Survival',
+        items: [
+          { name: 'Zanahoria dorada x64' }, { name: 'Manzana dorada encantada x24' }, { name: 'Caramelo Raro x24' },
+        ],
+      },
+    ],
   },
 ]
