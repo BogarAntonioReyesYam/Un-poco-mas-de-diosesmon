@@ -421,18 +421,18 @@ export const ITEM_ES = {
 }
 
 export const NATURE_ES = {
-  Adamant: 'Adamante (+Atk, -SpA)',
-  Jolly: 'Alegre (+Spe, -SpA)',
-  Timid: 'Tímido (+Spe, -Atk)',
-  Modest: 'Modesto (+SpA, -Atk)',
-  Bold: 'Osado (+Def, -Atk)',
-  Impish: 'Indisciplinado (+Def, -SpA)',
-  Relaxed: 'Relajado (+Def, -Spe)',
-  Careful: 'Cuidadoso (+SpD, -SpA)',
-  Calm: 'Quieto (+SpD, -Atk)',
-  Naive: 'Ingenuo (+Spe, -SpD)',
-  Hasty: 'Activa (+Spe, -Def)',
-  Rash: 'Indiscreto (+SpA, -SpD)',
+  Adamant: 'Menta Firme (+Atk, -SpA)',
+  Jolly: 'Menta Alegre (+Vel, -Atq. Esp.)',
+  Timid: 'Menta Miedosa (+Vel, -Atq)',
+  Modest: 'Menta Modesta (+Atq. Esp., -Atq)',
+  Bold: 'Menta Osada (+Def, -Atq)',
+  Impish: 'Menta Agitada (+Def, -Atq. Esp.)',
+  Relaxed: 'Menta Plácida (+Def, -Vel)',
+  Careful: 'Menta Cauta (+Def. Esp., -Atq. Esp.)',
+  Calm: 'Menta Serena (+Def. Esp., -Atq)',
+  Naive: 'Menta Ingenua (+Vel, -Def. Esp.)',
+  Hasty: 'Menta Activa (+Vel, -Def)',
+  Rash: 'Menta Afable (+Atq. Esp., -Def. Esp.)',
 }
 
 export const NATURE_COLOR = {
