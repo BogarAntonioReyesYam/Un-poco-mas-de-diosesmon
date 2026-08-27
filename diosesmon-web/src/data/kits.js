@@ -160,7 +160,7 @@ export const KITS_EXCLUSIVOS = [
         title: 'Consumibles Survival',
         items: [
           { name: 'Flechas x64' }, { name: 'Frasco con experiencia x64' }, { name: 'Manzana dorada x64' },
-          { name: 'Manzana dorada encantada x32' }, { name: 'Tótem de inmortalidad x18' },
+          { name: 'Manzana dorada encantada x32' },           { name: 'Tótem de inmortalidad x1' },
         ],
       },
     ],
