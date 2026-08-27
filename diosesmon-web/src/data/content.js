@@ -25,12 +25,6 @@ export const STEPS = [
   },
   {
     num: '02',
-    title: 'Conéctate a la IP',
-    body: 'Abre Minecraft, entra a multijugador, añade el servidor y pega mc.diosesmon.net. La primera carga tarda algo más mientras se generan los archivos: no lo cierres.',
-    link: null,
-  },
-  {
-    num: '03',
     title: 'Elige tu inicial',
     body: 'Habla con el NPC de Survival y busca al Profesor en el laboratorio del spawn. Desde ahí, abre la Pokepad, activa un trabajo y revisa el tablero de cazas.',
     link: { href: LINKS.wiki, label: 'Guía inicial completa' },
