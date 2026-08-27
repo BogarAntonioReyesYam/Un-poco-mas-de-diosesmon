@@ -167,7 +167,7 @@ export default function Pokemon() {
                         <TrendingUp size={14} className="text-gold" />
                       </span>
                       <span className="font-mono text-[0.65rem] uppercase tracking-wider text-mist">
-                        Objeto recomendado
+                        Objeto recomendado (Cobblemon)
                       </span>
                     </div>
                     <p className="font-display text-xl font-bold text-ink">
