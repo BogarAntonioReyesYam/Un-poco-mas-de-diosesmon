@@ -8,6 +8,7 @@ import Steps from './components/Steps'
 import Generations from './components/Generations'
 import Gyms from './components/Gyms'
 import Ranks from './components/Ranks'
+import KitsExclusivos from './components/KitsExclusivos'
 import Coins from './components/Coins'
 import Footer from './components/Footer'
 import Pokemon from './pages/Pokemon'
@@ -30,6 +31,7 @@ function Landing() {
         <Generations />
         <Gyms />
         <Ranks />
+        <KitsExclusivos />
         <Coins />
       </main>
       <Footer />

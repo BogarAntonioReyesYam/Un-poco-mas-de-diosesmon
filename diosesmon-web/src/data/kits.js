@@ -1,0 +1,42 @@
+export const KITS_EXCLUSIVOS = [
+  {
+    id: 'eevee',
+    name: 'Kit Eevee',
+    price: 3000,
+    color: '#c4956a',
+    accent: '#8b5a2b',
+    items: ['Armadura Eevee', 'Espada Eevee', 'Arco Eevee', 'Pico Eevee', 'Set completo Eevee', '64 Manzanas doradas', '16 Pociones'],
+  },
+  {
+    id: 'greninja',
+    name: 'Kit Greninja',
+    price: 4800,
+    color: '#2e5aa8',
+    accent: '#1a3a6b',
+    items: ['Armadura Greninja', 'Katana de Agua', 'Shurikens x2', 'Arco Hidro', 'Casco Greninja', '64 Manzanas', 'Master Ball x1'],
+  },
+  {
+    id: 'mewtwo',
+    name: 'Kit Mewtwo',
+    price: 6750,
+    color: '#b98bdb',
+    accent: '#6b4a8a',
+    items: ['Armadura Mewtwo', 'Espada Psíquica', 'Báculo Mewtwo', 'Arco Psi', 'Casco Mewtwo', '64 Zanahorias doradas', '16 Ender Pearls'],
+  },
+  {
+    id: 'rayquaza',
+    name: 'Kit Rayquaza',
+    price: 8250,
+    color: '#2d7a3a',
+    accent: '#1a4a1e',
+    items: ['Armadura Rayquaza', 'Espada Dragón', 'Arco Esmeralda', 'Hacha de Rayquaza', 'Elytra Rayquaza', '64 Manzanas', '20 Ultra Balls'],
+  },
+  {
+    id: 'darkrai',
+    name: 'Kit Darkrai',
+    price: 11250,
+    color: '#1a1a2e',
+    accent: '#6a1a5a',
+    items: ['Espada Sombría', 'Arco Sombrío x3', 'Hacha Sombría', 'Hoz Pesadilla', 'Armadura Darkrai completa', 'Casco Darkrai', 'Botas Sombrías', '64 Manzanas doradas', '16 Pociones', '20 Ojos de Ender', 'Master Ball x1'],
+  },
+]
