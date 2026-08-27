@@ -168,7 +168,7 @@ export default function Pokemon() {
                         <TrendingUp size={14} className="text-gold" />
                       </span>
                       <span className="font-mono text-[0.65rem] uppercase tracking-wider text-mist">
-                        Objeto recomendado (Cobblemon)
+                        Objetos recomendados (Cobblemon)
                       </span>
                     </div>
                     <p className="font-display text-xl font-bold text-ink">
@@ -191,7 +191,7 @@ export default function Pokemon() {
                         />
                       </span>
                       <span className="font-mono text-[0.65rem] uppercase tracking-wider text-mist">
-                        Naturaleza ideal
+                        Naturalezas ideales
                       </span>
                     </div>
                     <p className="font-display text-xl font-bold text-ink">
