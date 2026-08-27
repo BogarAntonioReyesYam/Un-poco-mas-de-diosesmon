@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ArrowLeft, Weight, Ruler, Hash, Swords, TrendingUp } from 'lucide-react'
+import { ArrowLeft, Weight, Ruler, Hash, Swords, TrendingUp, Zap } from 'lucide-react'
 import { typeEs, typeColor, spriteArt } from '../data/pokemonTypes'
 import { COMPETITIVE, ITEM_ES, NATURE_ES, NATURE_COLOR } from '../data/competitive'
+import { MOVES } from '../data/moves'
 
 const STAT_ES = {
   hp: 'PS', attack: 'Ataque', defense: 'Defensa', 'special-attack': 'At. Esp.',
@@ -201,6 +202,27 @@ export default function Pokemon() {
                     </p>
                   </div>
                 </div>
+
+                {MOVES[id] && (
+                  <div className="mt-4 rounded-xl border border-line bg-night/50 p-4">
+                    <div className="mb-3 flex items-center gap-2">
+                      <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-gold/10">
+                        <Zap size={14} className="text-gold" />
+                      </span>
+                      <span className="font-mono text-[0.65rem] uppercase tracking-wider text-mist">
+                        Movimientos recomendados (Cobblemon)
+                      </span>
+                    </div>
+                    <div className="grid grid-cols-2 gap-2">
+                      {MOVES[id].map((m) => (
+                        <span key={m} className="rounded-lg border border-line bg-panel px-3 py-2 text-center font-mono text-xs text-ink">
+                          {m}
+                        </span>
+                      ))}
+                    </div>
+                    <p className="mt-2 text-center font-mono text-[0.6rem] text-mist">MTs / Movimientos por nivel · Compatibles con Cobblemon 1.21</p>
+                  </div>
+                )}
               </div>
             </div>
           )}
