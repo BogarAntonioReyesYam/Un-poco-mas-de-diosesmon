@@ -3,6 +3,9 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { X, Coins } from 'lucide-react'
 import FadeIn, { SectionHead } from './FadeIn'
 import { KITS_EXCLUSIVOS } from '../data/kits'
+import { spriteSmall } from '../data/pokemonTypes'
+
+const KIT_POKE_ID = { eevee: 133, greninja: 658, mewtwo: 150, rayquaza: 384, darkrai: 491, groudon: 383 }
 
 function KitModal({ kit, onClose }) {
   useEffect(() => {
@@ -76,9 +79,15 @@ export default function KitsExclusivos() {
             <FadeIn key={kit.id} delay={i * 0.08}>
               <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-panel transition hover:-translate-y-1 hover:border-gold/40 hover:shadow-[0_12px_32px_rgba(0,0,0,0.35)]">
                 <div className="flex h-40 items-center justify-center p-6" style={{ background: `linear-gradient(135deg, ${kit.color}18, ${kit.accent}10)` }}>
-                  <div className="flex h-20 w-20 items-center justify-center rounded-2xl border text-2xl font-black text-white/80" style={{ background: kit.color, borderColor: `${kit.accent}`, boxShadow: `0 8px 20px ${kit.color}40` }}>
-                    {kit.name.split(' ')[1][0]}
-                  </div>
+                  <img
+                    src={spriteSmall(KIT_POKE_ID[kit.id] || 25)}
+                    alt={kit.name}
+                    width="96"
+                    height="96"
+                    loading="lazy"
+                    className="h-24 w-24 object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.35)]"
+                    style={{ imageRendering: 'pixelated' }}
+                  />
                 </div>
                 <div className="flex flex-1 flex-col p-4">
                   <h3 className="font-display font-bold">{kit.name}</h3>
